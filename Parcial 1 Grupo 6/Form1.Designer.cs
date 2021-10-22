@@ -170,7 +170,7 @@ namespace Parcial_1_Grupo_6
             // bnuevo
             // 
             this.bnuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnuevo.Location = new System.Drawing.Point(13, 186);
+            this.bnuevo.Location = new System.Drawing.Point(12, 186);
             this.bnuevo.Name = "bnuevo";
             this.bnuevo.Size = new System.Drawing.Size(80, 35);
             this.bnuevo.TabIndex = 95;
