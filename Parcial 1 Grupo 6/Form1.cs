@@ -243,7 +243,7 @@ namespace Parcial_1_Grupo_6
             txtnit.Text = "";
             txtafp.Text = "";
             txtisss.Text = "";
-            dtfecha.Text = "";
+            dtfecha.Text = "Indica la fecha";
             txtbuscar.Focus();
         }
 
@@ -270,7 +270,7 @@ namespace Parcial_1_Grupo_6
             txtnit.Text = "";
             txtafp.Text = "";
             txtisss.Text = "";
-            dtfecha.Text = "";
+            dtfecha.Text = "Indica la fecha";
             txtusuario.Focus();
 
             bnuevo.Visible = false;
@@ -362,6 +362,13 @@ namespace Parcial_1_Grupo_6
         private void dtfecha_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Consulta consulta = new Consulta();
+            consulta.Show();
+            this.Hide();
         }
     }
 }
