@@ -294,9 +294,9 @@ namespace Parcial_1_Grupo_6
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-2, 248);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 248);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1327, 228);
+            this.dataGridView1.Size = new System.Drawing.Size(616, 228);
             this.dataGridView1.TabIndex = 88;
             // 
             // bentrar
@@ -425,7 +425,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.dtfecha.Location = new System.Drawing.Point(467, 131);
             this.dtfecha.Name = "dtfecha";
-            this.dtfecha.Size = new System.Drawing.Size(200, 20);
+            this.dtfecha.Size = new System.Drawing.Size(100, 20);
             this.dtfecha.TabIndex = 117;
             this.dtfecha.ValueChanged += new System.EventHandler(this.dtfecha_ValueChanged);
             // 
@@ -444,7 +444,7 @@ namespace Parcial_1_Grupo_6
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
-            this.ClientSize = new System.Drawing.Size(1323, 488);
+            this.ClientSize = new System.Drawing.Size(641, 488);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dtfecha);
             this.Controls.Add(this.label12);

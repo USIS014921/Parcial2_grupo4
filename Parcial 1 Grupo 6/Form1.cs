@@ -244,8 +244,8 @@ namespace Parcial_1_Grupo_6
             lstnivel.Text = "Seleccione nivel";
             txttelefono.Text = "";
             txtcorreo.Text = "";
-            lstedad.Text = "Selecione su genero";
-            lstsexo.Text = "Indique su edad";
+            lstedad.Text = "Indique su edad";
+            lstsexo.Text = "Selecione su genero";
             txtdui.Text = "";
             txtnit.Text = "";
             txtafp.Text = "";
@@ -273,8 +273,8 @@ namespace Parcial_1_Grupo_6
             lstnivel.Text = "Seleccione nivel";
             txttelefono.Text = "";
             txtcorreo.Text = "";
-            lstedad.Text = "Selecione su genero";
-            lstsexo.Text = "Indique su edad";
+            lstedad.Text = "Indique su edad";
+            lstsexo.Text = "Selecione su genero";
             txtdui.Text = "";
             txtnit.Text = "";
             txtafp.Text = "";
