@@ -377,5 +377,3 @@ namespace Parcial_1_Grupo_6
         }
     }
 }
-    
-

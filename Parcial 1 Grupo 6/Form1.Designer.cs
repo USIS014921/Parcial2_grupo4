@@ -29,6 +29,7 @@ namespace Parcial_1_Grupo_6
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lstsexo = new System.Windows.Forms.ComboBox();
             this.lstnivel = new System.Windows.Forms.ComboBox();
             this.lstedad = new System.Windows.Forms.ComboBox();
@@ -63,7 +64,9 @@ namespace Parcial_1_Grupo_6
             this.txtisss = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dtfecha = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lstsexo
@@ -210,7 +213,7 @@ namespace Parcial_1_Grupo_6
             // bactualizar
             // 
             this.bactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bactualizar.Location = new System.Drawing.Point(185, 245);
+            this.bactualizar.Location = new System.Drawing.Point(185, 207);
             this.bactualizar.Name = "bactualizar";
             this.bactualizar.Size = new System.Drawing.Size(80, 35);
             this.bactualizar.TabIndex = 96;
@@ -221,7 +224,7 @@ namespace Parcial_1_Grupo_6
             // bnuevo
             // 
             this.bnuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnuevo.Location = new System.Drawing.Point(12, 245);
+            this.bnuevo.Location = new System.Drawing.Point(12, 207);
             this.bnuevo.Name = "bnuevo";
             this.bnuevo.Size = new System.Drawing.Size(80, 35);
             this.bnuevo.TabIndex = 95;
@@ -261,7 +264,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(528, 254);
+            this.txtbuscar.Location = new System.Drawing.Point(528, 216);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(100, 20);
             this.txtbuscar.TabIndex = 91;
@@ -269,7 +272,7 @@ namespace Parcial_1_Grupo_6
             // bsalir
             // 
             this.bsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsalir.Location = new System.Drawing.Point(356, 245);
+            this.bsalir.Location = new System.Drawing.Point(356, 207);
             this.bsalir.Name = "bsalir";
             this.bsalir.Size = new System.Drawing.Size(80, 35);
             this.bsalir.TabIndex = 90;
@@ -280,7 +283,7 @@ namespace Parcial_1_Grupo_6
             // bbuscar
             // 
             this.bbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbuscar.Location = new System.Drawing.Point(442, 245);
+            this.bbuscar.Location = new System.Drawing.Point(442, 207);
             this.bbuscar.Name = "bbuscar";
             this.bbuscar.Size = new System.Drawing.Size(80, 35);
             this.bbuscar.TabIndex = 89;
@@ -291,7 +294,7 @@ namespace Parcial_1_Grupo_6
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 286);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 248);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1287, 228);
             this.dataGridView1.TabIndex = 88;
@@ -299,7 +302,7 @@ namespace Parcial_1_Grupo_6
             // bentrar
             // 
             this.bentrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bentrar.Location = new System.Drawing.Point(270, 245);
+            this.bentrar.Location = new System.Drawing.Point(270, 207);
             this.bentrar.Name = "bentrar";
             this.bentrar.Size = new System.Drawing.Size(80, 35);
             this.bentrar.TabIndex = 87;
@@ -310,7 +313,7 @@ namespace Parcial_1_Grupo_6
             // bmodificar
             // 
             this.bmodificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bmodificar.Location = new System.Drawing.Point(185, 245);
+            this.bmodificar.Location = new System.Drawing.Point(185, 207);
             this.bmodificar.Name = "bmodificar";
             this.bmodificar.Size = new System.Drawing.Size(80, 35);
             this.bmodificar.TabIndex = 86;
@@ -321,7 +324,7 @@ namespace Parcial_1_Grupo_6
             // beliminar
             // 
             this.beliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.beliminar.Location = new System.Drawing.Point(98, 245);
+            this.beliminar.Location = new System.Drawing.Point(98, 207);
             this.beliminar.Name = "beliminar";
             this.beliminar.Size = new System.Drawing.Size(80, 35);
             this.beliminar.TabIndex = 85;
@@ -332,7 +335,7 @@ namespace Parcial_1_Grupo_6
             // bguardar
             // 
             this.bguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bguardar.Location = new System.Drawing.Point(12, 245);
+            this.bguardar.Location = new System.Drawing.Point(12, 207);
             this.bguardar.Name = "bguardar";
             this.bguardar.Size = new System.Drawing.Size(80, 35);
             this.bguardar.TabIndex = 84;
@@ -426,12 +429,23 @@ namespace Parcial_1_Grupo_6
             this.dtfecha.TabIndex = 117;
             this.dtfecha.ValueChanged += new System.EventHandler(this.dtfecha_ValueChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 118;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
-            this.ClientSize = new System.Drawing.Size(1311, 525);
+            this.ClientSize = new System.Drawing.Size(1311, 488);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dtfecha);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtisss);
@@ -470,6 +484,7 @@ namespace Parcial_1_Grupo_6
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -511,5 +526,6 @@ namespace Parcial_1_Grupo_6
         private System.Windows.Forms.TextBox txtisss;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker dtfecha;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
