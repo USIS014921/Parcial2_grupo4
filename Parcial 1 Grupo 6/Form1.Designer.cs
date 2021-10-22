@@ -32,12 +32,10 @@ namespace Parcial_1_Grupo_6
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lstsexo = new System.Windows.Forms.ComboBox();
             this.lstnivel = new System.Windows.Forms.ComboBox();
-            this.lstedad = new System.Windows.Forms.ComboBox();
             this.txtcorreo = new System.Windows.Forms.TextBox();
             this.txttelefono = new System.Windows.Forms.TextBox();
             this.txtclave = new System.Windows.Forms.TextBox();
             this.txtusuario = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -100,48 +98,6 @@ namespace Parcial_1_Grupo_6
             this.lstnivel.Size = new System.Drawing.Size(100, 21);
             this.lstnivel.TabIndex = 106;
             // 
-            // lstedad
-            // 
-            this.lstedad.FormattingEnabled = true;
-            this.lstedad.Items.AddRange(new object[] {
-            "18\t",
-            "19\t",
-            "20",
-            "21\t",
-            "22\t",
-            "23\t",
-            "24\t",
-            "25\t",
-            "26\t",
-            "27\t",
-            "28\t",
-            "29\t",
-            "30",
-            "31\t",
-            "32\t",
-            "33\t",
-            "34\t",
-            "35\t",
-            "36\t",
-            "37\t",
-            "38\t",
-            "39\t",
-            "40",
-            "41\t",
-            "42\t",
-            "43\t",
-            "44\t",
-            "45\t",
-            "46\t",
-            "47\t",
-            "48\t",
-            "49\t",
-            "50"});
-            this.lstedad.Location = new System.Drawing.Point(270, 180);
-            this.lstedad.Name = "lstedad";
-            this.lstedad.Size = new System.Drawing.Size(100, 21);
-            this.lstedad.TabIndex = 105;
-            // 
             // txtcorreo
             // 
             this.txtcorreo.Location = new System.Drawing.Point(270, 127);
@@ -169,16 +125,6 @@ namespace Parcial_1_Grupo_6
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(100, 20);
             this.txtusuario.TabIndex = 101;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(206, 185);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 16);
-            this.label7.TabIndex = 100;
-            this.label7.Text = "Edad:";
             // 
             // label6
             // 
@@ -213,7 +159,7 @@ namespace Parcial_1_Grupo_6
             // bactualizar
             // 
             this.bactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bactualizar.Location = new System.Drawing.Point(185, 207);
+            this.bactualizar.Location = new System.Drawing.Point(186, 186);
             this.bactualizar.Name = "bactualizar";
             this.bactualizar.Size = new System.Drawing.Size(80, 35);
             this.bactualizar.TabIndex = 96;
@@ -224,7 +170,7 @@ namespace Parcial_1_Grupo_6
             // bnuevo
             // 
             this.bnuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnuevo.Location = new System.Drawing.Point(12, 207);
+            this.bnuevo.Location = new System.Drawing.Point(13, 186);
             this.bnuevo.Name = "bnuevo";
             this.bnuevo.Size = new System.Drawing.Size(80, 35);
             this.bnuevo.TabIndex = 95;
@@ -264,7 +210,7 @@ namespace Parcial_1_Grupo_6
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(528, 216);
+            this.txtbuscar.Location = new System.Drawing.Point(529, 195);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(100, 20);
             this.txtbuscar.TabIndex = 91;
@@ -272,7 +218,7 @@ namespace Parcial_1_Grupo_6
             // bsalir
             // 
             this.bsalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bsalir.Location = new System.Drawing.Point(356, 207);
+            this.bsalir.Location = new System.Drawing.Point(357, 186);
             this.bsalir.Name = "bsalir";
             this.bsalir.Size = new System.Drawing.Size(80, 35);
             this.bsalir.TabIndex = 90;
@@ -283,7 +229,7 @@ namespace Parcial_1_Grupo_6
             // bbuscar
             // 
             this.bbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbuscar.Location = new System.Drawing.Point(442, 207);
+            this.bbuscar.Location = new System.Drawing.Point(443, 186);
             this.bbuscar.Name = "bbuscar";
             this.bbuscar.Size = new System.Drawing.Size(80, 35);
             this.bbuscar.TabIndex = 89;
@@ -294,7 +240,7 @@ namespace Parcial_1_Grupo_6
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 248);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 227);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(616, 228);
             this.dataGridView1.TabIndex = 88;
@@ -302,7 +248,7 @@ namespace Parcial_1_Grupo_6
             // bentrar
             // 
             this.bentrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bentrar.Location = new System.Drawing.Point(270, 207);
+            this.bentrar.Location = new System.Drawing.Point(271, 186);
             this.bentrar.Name = "bentrar";
             this.bentrar.Size = new System.Drawing.Size(80, 35);
             this.bentrar.TabIndex = 87;
@@ -313,7 +259,7 @@ namespace Parcial_1_Grupo_6
             // bmodificar
             // 
             this.bmodificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bmodificar.Location = new System.Drawing.Point(185, 207);
+            this.bmodificar.Location = new System.Drawing.Point(186, 186);
             this.bmodificar.Name = "bmodificar";
             this.bmodificar.Size = new System.Drawing.Size(80, 35);
             this.bmodificar.TabIndex = 86;
@@ -324,7 +270,7 @@ namespace Parcial_1_Grupo_6
             // beliminar
             // 
             this.beliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.beliminar.Location = new System.Drawing.Point(98, 207);
+            this.beliminar.Location = new System.Drawing.Point(99, 186);
             this.beliminar.Name = "beliminar";
             this.beliminar.Size = new System.Drawing.Size(80, 35);
             this.beliminar.TabIndex = 85;
@@ -335,7 +281,7 @@ namespace Parcial_1_Grupo_6
             // bguardar
             // 
             this.bguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bguardar.Location = new System.Drawing.Point(12, 207);
+            this.bguardar.Location = new System.Drawing.Point(13, 186);
             this.bguardar.Name = "bguardar";
             this.bguardar.Size = new System.Drawing.Size(80, 35);
             this.bguardar.TabIndex = 84;
@@ -444,7 +390,7 @@ namespace Parcial_1_Grupo_6
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
-            this.ClientSize = new System.Drawing.Size(641, 488);
+            this.ClientSize = new System.Drawing.Size(641, 466);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dtfecha);
             this.Controls.Add(this.label12);
@@ -458,12 +404,10 @@ namespace Parcial_1_Grupo_6
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lstsexo);
             this.Controls.Add(this.lstnivel);
-            this.Controls.Add(this.lstedad);
             this.Controls.Add(this.txtcorreo);
             this.Controls.Add(this.txttelefono);
             this.Controls.Add(this.txtclave);
             this.Controls.Add(this.txtusuario);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -494,12 +438,10 @@ namespace Parcial_1_Grupo_6
 
         private System.Windows.Forms.ComboBox lstsexo;
         private System.Windows.Forms.ComboBox lstnivel;
-        private System.Windows.Forms.ComboBox lstedad;
         private System.Windows.Forms.TextBox txtcorreo;
         private System.Windows.Forms.TextBox txttelefono;
         private System.Windows.Forms.TextBox txtclave;
         private System.Windows.Forms.TextBox txtusuario;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

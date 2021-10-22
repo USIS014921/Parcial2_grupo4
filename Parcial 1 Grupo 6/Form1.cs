@@ -29,7 +29,6 @@ namespace Parcial_1_Grupo_6
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstedad.Enabled = false;
             lstsexo.Enabled = false;
             txtdui.Enabled = false;
             txtnit.Enabled = false;
@@ -83,12 +82,11 @@ namespace Parcial_1_Grupo_6
                     txttelefono.Text = (myReader.GetString(4));
                     txtcorreo.Text = (myReader.GetString(5));
                     lstsexo.Text = (myReader.GetString(6));
-                    lstedad.Text = (myReader.GetString(7));
-                    txtdui.Text = (myReader.GetString(8));
-                    txtnit.Text = (myReader.GetString(9));
-                    txtafp.Text = (myReader.GetString(10));
-                    txtisss.Text = (myReader.GetString(11));
-                    dtfecha.Text = (myReader.GetString(12));
+                    txtdui.Text = (myReader.GetString(7));
+                    txtnit.Text = (myReader.GetString(8));
+                    txtafp.Text = (myReader.GetString(9));
+                    txtisss.Text = (myReader.GetString(10));
+                    dtfecha.Text = (myReader.GetString(11));
 
                 }
                 else
@@ -112,7 +110,6 @@ namespace Parcial_1_Grupo_6
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstedad.Enabled = false;
             lstsexo.Enabled = false;
             txtdui.Enabled = false;
             txtnit.Enabled = false;
@@ -145,7 +142,6 @@ namespace Parcial_1_Grupo_6
                 string niv = lstnivel.Text;
                 string tel = txttelefono.Text.ToString();
                 string cor = txtcorreo.Text.ToString();
-                string eda = lstedad.Text;
                 string sex = lstsexo.Text;
                 string dui = txtdui.Text.ToString();
                 string nit = txtnit.Text.ToString();
@@ -154,7 +150,7 @@ namespace Parcial_1_Grupo_6
                 string fec = dtfecha.Text.ToString();
 
 
-                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "',telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',edad = '" + eda + "',dui = '"+ dui +"',nit = '" + nit +"',afp = '"+ afp +"',isss = '" + isss + "',fecha = '"+ fec +"' WHERE usuario = '" + usuario_modificar + "'";
+                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "',telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',dui = '"+ dui +"',nit = '" + nit +"',afp = '"+ afp +"',isss = '" + isss + "',fecha = '"+ fec +"' WHERE usuario = '" + usuario_modificar + "'";
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
@@ -186,7 +182,6 @@ namespace Parcial_1_Grupo_6
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstedad.Enabled = false;
             lstsexo.Enabled = false;
             txtdui.Enabled = false;
             txtnit.Enabled = false;
@@ -232,7 +227,6 @@ namespace Parcial_1_Grupo_6
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstedad.Enabled = false;
             lstsexo.Enabled = false;
             txtdui.Enabled = false;
             txtnit.Enabled = false;
@@ -244,7 +238,6 @@ namespace Parcial_1_Grupo_6
             lstnivel.Text = "Seleccione nivel";
             txttelefono.Text = "";
             txtcorreo.Text = "";
-            lstedad.Text = "Indique su edad";
             lstsexo.Text = "Selecione su genero";
             txtdui.Text = "";
             txtnit.Text = "";
@@ -261,7 +254,6 @@ namespace Parcial_1_Grupo_6
             lstnivel.Enabled = true;
             txttelefono.Enabled = true;
             txtcorreo.Enabled = true;
-            lstedad.Enabled = true;
             lstsexo.Enabled = true;
             txtdui.Enabled = true;
             txtnit.Enabled = true;
@@ -273,7 +265,6 @@ namespace Parcial_1_Grupo_6
             lstnivel.Text = "Seleccione nivel";
             txttelefono.Text = "";
             txtcorreo.Text = "";
-            lstedad.Text = "Indique su edad";
             lstsexo.Text = "Selecione su genero";
             txtdui.Text = "";
             txtnit.Text = "";
@@ -293,7 +284,6 @@ namespace Parcial_1_Grupo_6
             lstnivel.Enabled = true;
             txttelefono.Enabled = true;
             txtcorreo.Enabled = true;
-            lstedad.Enabled = true;
             lstsexo.Enabled = true;
             txtdui.Enabled = true;
             txtnit.Enabled = true;
@@ -312,7 +302,7 @@ namespace Parcial_1_Grupo_6
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                string myInsertQuery = "INSERT INTO usuarios (usuario,clave,nivel,telefono,correo,sexo,edad,dui,nit,afp,isss) Values(?usuario,?clave,?nivel,?telefono,?correo,?sexo,?edad,?dui,?nit,?afp,?isss)";
+                string myInsertQuery = "INSERT INTO usuarios (usuario,clave,nivel,telefono,correo,sexo,dui,nit,afp,isss) Values(?usuario,?clave,?nivel,?telefono,?correo,?sexo,?dui,?nit,?afp,?isss)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
                 myCommand.Parameters.Add("?usuario", txtusuario.Text);
@@ -321,7 +311,6 @@ namespace Parcial_1_Grupo_6
                 myCommand.Parameters.Add("?telefono", txttelefono.Text);
                 myCommand.Parameters.Add("?correo", txtcorreo.Text);
                 myCommand.Parameters.Add("?sexo", lstsexo.Text);
-                myCommand.Parameters.Add("?edad", lstedad.Text);
                 myCommand.Parameters.Add("?dui",  txtdui.Text);
                 myCommand.Parameters.Add("?nit", txtnit.Text);
                 myCommand.Parameters.Add("?afp", txtafp.Text);
@@ -356,7 +345,6 @@ namespace Parcial_1_Grupo_6
             lstnivel.Enabled = false;
             txttelefono.Enabled = false;
             txtcorreo.Enabled = false;
-            lstedad.Enabled = false;
             lstsexo.Enabled = false;
             txtdui.Enabled = false;
             txtnit.Enabled = false;
