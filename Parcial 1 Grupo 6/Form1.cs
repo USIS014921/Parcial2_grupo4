@@ -316,17 +316,17 @@ namespace Parcial_1_Grupo_6
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
                 myCommand.Parameters.Add("?usuario", txtusuario.Text);
-                myCommand.Parameters.Add("?clave", MySqlDbType.VarChar, 20).Value = txtclave.Text;
-                myCommand.Parameters.Add("?nivel", MySqlDbType.Int32, 10).Value = lstnivel.Text;
-                myCommand.Parameters.Add("?telefono", MySqlDbType.Int32, 20).Value = txttelefono.Text;
-                myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 40).Value = txtcorreo.Text;
-                myCommand.Parameters.Add("?sexo", MySqlDbType.VarChar, 20).Value = lstsexo.Text;
-                myCommand.Parameters.Add("?edad", MySqlDbType.Int32, 4).Value = lstedad.Text;
-                myCommand.Parameters.Add("?dui", MySqlDbType.Int32, 20).Value = txtdui.Text;
-                myCommand.Parameters.Add("?nit", MySqlDbType.Int32, 20).Value = txtnit.Text;
-                myCommand.Parameters.Add("?afp", MySqlDbType.Int32, 20).Value = txtafp.Text;
-                myCommand.Parameters.Add("?isss", MySqlDbType.Int32, 20).Value = txtisss.Text;
-                myCommand.Parameters.Add("?fecha", MySqlDbType.Int32, 10).Value = dtfecha.Text;
+                myCommand.Parameters.Add("?clave", txtclave.Text);
+                myCommand.Parameters.Add("?nivel", lstnivel.Text);
+                myCommand.Parameters.Add("?telefono", txttelefono.Text);
+                myCommand.Parameters.Add("?correo", txtcorreo.Text);
+                myCommand.Parameters.Add("?sexo", lstsexo.Text);
+                myCommand.Parameters.Add("?edad", lstedad.Text);
+                myCommand.Parameters.Add("?dui",  txtdui.Text);
+                myCommand.Parameters.Add("?nit", txtnit.Text);
+                myCommand.Parameters.Add("?afp", txtafp.Text);
+                myCommand.Parameters.Add("?isss", txtisss.Text);
+                myCommand.Parameters.Add("?fecha", dtfecha.Text);
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
