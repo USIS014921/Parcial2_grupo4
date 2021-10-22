@@ -370,5 +370,10 @@ namespace Parcial_1_Grupo_6
             consulta.Show();
             this.Hide();
         }
+
+        private void txtbuscar_TextChanged(object sender, EventArgs e)
+        {
+        
+        }
     }
 }
