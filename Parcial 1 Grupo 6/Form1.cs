@@ -56,67 +56,12 @@ namespace Parcial_1_Grupo_6
 
             }
         }
-
-        private void bnuevo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bguardar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bmodificar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bactualizar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void beliminar_Click(object sender, EventArgs e)
-        {
-           
-        }
-
+   
         private void bsalir_Click(object sender, EventArgs e)
         {
             Login login = new Login();
             login.Show();
             this.Hide();
-        }
-
-        private void bsiguiente_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bentrar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lstedad_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtusuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bentrar_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bentrar_Click_2(object sender, EventArgs e)
-        {
-
         }
 
         private void bbuscar_Click(object sender, EventArgs e)
