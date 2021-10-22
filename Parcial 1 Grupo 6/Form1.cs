@@ -302,7 +302,7 @@ namespace Parcial_1_Grupo_6
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                string myInsertQuery = "INSERT INTO usuarios (usuario,clave,nivel,telefono,correo,sexo,dui,nit,afp,isss) Values(?usuario,?clave,?nivel,?telefono,?correo,?sexo,?dui,?nit,?afp,?isss)";
+                string myInsertQuery = "INSERT INTO usuarios (usuario,clave,nivel,telefono,correo,sexo,dui,nit,afp,isss,fecha) Values(?usuario,?clave,?nivel,?telefono,?correo,?sexo,?dui,?nit,?afp,?isss,?fecha)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
                 myCommand.Parameters.Add("?usuario", txtusuario.Text);
