@@ -35,6 +35,8 @@ namespace Parcial_1_Grupo_6
             txtafp.Enabled = false;
             txtisss.Enabled = false;
             dtfecha.Enabled = false;
+            txtpuesto.Enabled = false;
+            txtsueldo.Enabled = false;
 
             bactualizar.Visible = false;
 
@@ -87,6 +89,8 @@ namespace Parcial_1_Grupo_6
                     txtafp.Text = (myReader.GetString(9));
                     txtisss.Text = (myReader.GetString(10));
                     dtfecha.Text = (myReader.GetString(11));
+                    txtpuesto.Text = (myReader.GetString(12));
+                    txtsueldo.Text = (myReader.GetString(13));
 
                 }
                 else
@@ -116,6 +120,8 @@ namespace Parcial_1_Grupo_6
             txtafp.Enabled = false;
             txtisss.Enabled = false;
             dtfecha.Enabled = false;
+            txtpuesto.Enabled = false;
+            txtsueldo.Enabled = false;
 
             bmodificar.Focus();
         }
@@ -148,9 +154,11 @@ namespace Parcial_1_Grupo_6
                 string afp = txtafp.Text.ToString();
                 string isss = txtisss.Text.ToString();
                 string fec = dtfecha.Text.ToString();
+                string pues = txtpuesto.Text.ToString();
+                string suel = txtsueldo.Text.ToString();
 
 
-                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "',telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',dui = '"+ dui +"',nit = '" + nit +"',afp = '"+ afp +"',isss = '" + isss + "',fecha = '"+ fec +"' WHERE usuario = '" + usuario_modificar + "'";
+                string myInsertQuery = "UPDATE usuarios SET usuario = '" + usu + "',clave = '" + cla + "',nivel = '" + niv + "',telefono = '" + tel + "',correo = '" + cor + "',sexo = '" + sex + "',dui = '"+ dui +"',nit = '" + nit +"',afp = '"+ afp +"',isss = '" + isss + "',fecha = '"+ fec +"',puesto = '"+ pues +"',sueldo = '"+ suel +"'  WHERE usuario = '" + usuario_modificar + "'";
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
@@ -188,6 +196,8 @@ namespace Parcial_1_Grupo_6
             txtafp.Enabled = false;
             txtisss.Enabled = false;
             dtfecha.Enabled = false;
+            txtpuesto.Enabled = false;
+            txtsueldo.Enabled = false;
 
             bmodificar.Focus();
         }
@@ -233,6 +243,8 @@ namespace Parcial_1_Grupo_6
             txtafp.Enabled = false;
             txtisss.Enabled = false;
             dtfecha.Enabled = false;
+            txtpuesto.Enabled = false;
+            txtsueldo.Enabled = false;
             txtusuario.Text = "";
             txtclave.Text = "";
             lstnivel.Text = "Seleccione nivel";
@@ -243,7 +255,9 @@ namespace Parcial_1_Grupo_6
             txtnit.Text = "";
             txtafp.Text = "";
             txtisss.Text = "";
-            dtfecha.Text = "Indica la fecha";
+            dtfecha.Text = "";
+            txtpuesto.Text= "";
+            txtsueldo.Text = "";
             txtbuscar.Focus();
         }
 
@@ -260,6 +274,8 @@ namespace Parcial_1_Grupo_6
             txtafp.Enabled = true;
             txtisss.Enabled = true;
             dtfecha.Enabled = true;
+            txtpuesto.Enabled = true;
+            txtsueldo.Enabled = true;
             txtusuario.Text = "";
             txtclave.Text = "";
             lstnivel.Text = "Seleccione nivel";
@@ -271,6 +287,8 @@ namespace Parcial_1_Grupo_6
             txtafp.Text = "";
             txtisss.Text = "";
             dtfecha.Text = "";
+            txtpuesto.Text = "";
+            txtsueldo.Text = "";
             txtusuario.Focus();
 
             bnuevo.Visible = false;
@@ -290,6 +308,8 @@ namespace Parcial_1_Grupo_6
             txtafp.Enabled = true;
             txtisss.Enabled = true;
             dtfecha.Enabled = true;
+            txtpuesto.Enabled = true;
+            txtsueldo.Enabled = true;
             txtusuario.Focus();
 
             bmodificar.Visible = false;
@@ -302,7 +322,7 @@ namespace Parcial_1_Grupo_6
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-                string myInsertQuery = "INSERT INTO usuarios (usuario,clave,nivel,telefono,correo,sexo,dui,nit,afp,isss,fecha) Values(?usuario,?clave,?nivel,?telefono,?correo,?sexo,?dui,?nit,?afp,?isss,?fecha)";
+                string myInsertQuery = "INSERT INTO usuarios (usuario,clave,nivel,telefono,correo,sexo,dui,nit,afp,isss,fecha,puesto,sueldo) Values(?usuario,?clave,?nivel,?telefono,?correo,?sexo,?dui,?nit,?afp,?isss,?fecha,?puesto,?sueldo)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
                 myCommand.Parameters.Add("?usuario", txtusuario.Text);
@@ -316,6 +336,8 @@ namespace Parcial_1_Grupo_6
                 myCommand.Parameters.Add("?afp", txtafp.Text);
                 myCommand.Parameters.Add("?isss", txtisss.Text);
                 myCommand.Parameters.Add("?fecha", dtfecha.Text);
+                myCommand.Parameters.Add("?puesto", txtpuesto.Text);
+                myCommand.Parameters.Add("?sueldo", txtsueldo.Text);
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
@@ -351,6 +373,8 @@ namespace Parcial_1_Grupo_6
             txtafp.Enabled = false;
             txtisss.Enabled = false;
             dtfecha.Enabled = false;
+            txtpuesto.Enabled = false;
+            txtsueldo.Enabled = false;
             bnuevo.Focus();
         }
 
