@@ -270,7 +270,7 @@ namespace Parcial_1_Grupo_6
             txtnit.Text = "";
             txtafp.Text = "";
             txtisss.Text = "";
-            dtfecha.Text = "Indica la fecha";
+            dtfecha.Text = "";
             txtusuario.Focus();
 
             bnuevo.Visible = false;
