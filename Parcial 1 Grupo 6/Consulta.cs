@@ -47,5 +47,15 @@ namespace Parcial_1_Grupo_6
             form1.Show();
             this.Hide();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -165,7 +165,7 @@ namespace Parcial_1_Grupo_6
             // bactualizar
             // 
             this.bactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bactualizar.Location = new System.Drawing.Point(190, 216);
+            this.bactualizar.Location = new System.Drawing.Point(189, 216);
             this.bactualizar.Name = "bactualizar";
             this.bactualizar.Size = new System.Drawing.Size(80, 35);
             this.bactualizar.TabIndex = 96;
@@ -176,7 +176,7 @@ namespace Parcial_1_Grupo_6
             // bnuevo
             // 
             this.bnuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnuevo.Location = new System.Drawing.Point(16, 216);
+            this.bnuevo.Location = new System.Drawing.Point(17, 216);
             this.bnuevo.Name = "bnuevo";
             this.bnuevo.Size = new System.Drawing.Size(80, 35);
             this.bnuevo.TabIndex = 95;
