@@ -493,7 +493,7 @@ namespace Parcial_1_Grupo_6
             this.Controls.Add(this.beliminar);
             this.Controls.Add(this.bguardar);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "MySql";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
