@@ -198,7 +198,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(221, 43);
+            this.label2.Location = new System.Drawing.Point(214, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 93;
@@ -452,7 +452,7 @@ namespace Parcial_1_Grupo_6
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
-            this.ClientSize = new System.Drawing.Size(645, 494);
+            this.ClientSize = new System.Drawing.Size(646, 494);
             this.Controls.Add(this.txtsueldo);
             this.Controls.Add(this.txtpuesto);
             this.Controls.Add(this.label14);
